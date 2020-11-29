@@ -1,8 +1,8 @@
 import React from 'react';
-import './App.css';
+import './tailwind.output.css';
 
 function App() {
-  return <div>Welcome to CityScan</div>;
+  return <div className="w-full">Welcome to CityScan</div>;
 }
 
 export default App;

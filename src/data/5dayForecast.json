@@ -1,0 +1,178 @@
+{
+    "Headline": {
+        "EffectiveDate": "2020-11-30T13:00:00+01:00",
+        "EffectiveEpochDate": 1606737600,
+        "Severity": 5,
+        "Text": "Expect rainy weather Monday afternoon through Monday evening",
+        "Category": "rain",
+        "EndDate": "2020-12-01T01:00:00+01:00",
+        "EndEpochDate": 1606780800,
+        "MobileLink": "http://m.accuweather.com/en/nl/amsterdam/249758/extended-weather-forecast/249758?unit=c&lang=en-us",
+        "Link": "http://www.accuweather.com/en/nl/amsterdam/249758/daily-weather-forecast/249758?unit=c&lang=en-us"
+    },
+    "DailyForecasts": [
+        {
+            "Date": "2020-11-29T07:00:00+01:00",
+            "EpochDate": 1606629600,
+            "Temperature": {
+                "Minimum": {
+                    "Value": -1.7,
+                    "Unit": "C",
+                    "UnitType": 17
+                },
+                "Maximum": {
+                    "Value": 4.4,
+                    "Unit": "C",
+                    "UnitType": 17
+                }
+            },
+            "Day": {
+                "Icon": 4,
+                "IconPhrase": "Intermittent clouds",
+                "HasPrecipitation": false
+            },
+            "Night": {
+                "Icon": 34,
+                "IconPhrase": "Mostly clear",
+                "HasPrecipitation": false
+            },
+            "Sources": [
+                "AccuWeather"
+            ],
+            "MobileLink": "http://m.accuweather.com/en/nl/amsterdam/249758/daily-weather-forecast/249758?day=1&unit=c&lang=en-us",
+            "Link": "http://www.accuweather.com/en/nl/amsterdam/249758/daily-weather-forecast/249758?day=1&unit=c&lang=en-us"
+        },
+        {
+            "Date": "2020-11-30T07:00:00+01:00",
+            "EpochDate": 1606716000,
+            "Temperature": {
+                "Minimum": {
+                    "Value": 6.7,
+                    "Unit": "C",
+                    "UnitType": 17
+                },
+                "Maximum": {
+                    "Value": 8.3,
+                    "Unit": "C",
+                    "UnitType": 17
+                }
+            },
+            "Day": {
+                "Icon": 12,
+                "IconPhrase": "Showers",
+                "HasPrecipitation": true,
+                "PrecipitationType": "Rain",
+                "PrecipitationIntensity": "Light"
+            },
+            "Night": {
+                "Icon": 39,
+                "IconPhrase": "Partly cloudy w/ showers",
+                "HasPrecipitation": true,
+                "PrecipitationType": "Rain",
+                "PrecipitationIntensity": "Light"
+            },
+            "Sources": [
+                "AccuWeather"
+            ],
+            "MobileLink": "http://m.accuweather.com/en/nl/amsterdam/249758/daily-weather-forecast/249758?day=2&unit=c&lang=en-us",
+            "Link": "http://www.accuweather.com/en/nl/amsterdam/249758/daily-weather-forecast/249758?day=2&unit=c&lang=en-us"
+        },
+        {
+            "Date": "2020-12-01T07:00:00+01:00",
+            "EpochDate": 1606802400,
+            "Temperature": {
+                "Minimum": {
+                    "Value": 4.4,
+                    "Unit": "C",
+                    "UnitType": 17
+                },
+                "Maximum": {
+                    "Value": 8.9,
+                    "Unit": "C",
+                    "UnitType": 17
+                }
+            },
+            "Day": {
+                "Icon": 14,
+                "IconPhrase": "Partly sunny w/ showers",
+                "HasPrecipitation": true,
+                "PrecipitationType": "Rain",
+                "PrecipitationIntensity": "Light"
+            },
+            "Night": {
+                "Icon": 36,
+                "IconPhrase": "Intermittent clouds",
+                "HasPrecipitation": false
+            },
+            "Sources": [
+                "AccuWeather"
+            ],
+            "MobileLink": "http://m.accuweather.com/en/nl/amsterdam/249758/daily-weather-forecast/249758?day=3&unit=c&lang=en-us",
+            "Link": "http://www.accuweather.com/en/nl/amsterdam/249758/daily-weather-forecast/249758?day=3&unit=c&lang=en-us"
+        },
+        {
+            "Date": "2020-12-02T07:00:00+01:00",
+            "EpochDate": 1606888800,
+            "Temperature": {
+                "Minimum": {
+                    "Value": 3.9,
+                    "Unit": "C",
+                    "UnitType": 17
+                },
+                "Maximum": {
+                    "Value": 7.3,
+                    "Unit": "C",
+                    "UnitType": 17
+                }
+            },
+            "Day": {
+                "Icon": 3,
+                "IconPhrase": "Partly sunny",
+                "HasPrecipitation": false
+            },
+            "Night": {
+                "Icon": 38,
+                "IconPhrase": "Mostly cloudy",
+                "HasPrecipitation": false
+            },
+            "Sources": [
+                "AccuWeather"
+            ],
+            "MobileLink": "http://m.accuweather.com/en/nl/amsterdam/249758/daily-weather-forecast/249758?day=4&unit=c&lang=en-us",
+            "Link": "http://www.accuweather.com/en/nl/amsterdam/249758/daily-weather-forecast/249758?day=4&unit=c&lang=en-us"
+        },
+        {
+            "Date": "2020-12-03T07:00:00+01:00",
+            "EpochDate": 1606975200,
+            "Temperature": {
+                "Minimum": {
+                    "Value": 2.8,
+                    "Unit": "C",
+                    "UnitType": 17
+                },
+                "Maximum": {
+                    "Value": 6.0,
+                    "Unit": "C",
+                    "UnitType": 17
+                }
+            },
+            "Day": {
+                "Icon": 6,
+                "IconPhrase": "Mostly cloudy",
+                "HasPrecipitation": false
+            },
+            "Night": {
+                "Icon": 12,
+                "IconPhrase": "Showers",
+                "HasPrecipitation": true,
+                "PrecipitationType": "Rain",
+                "PrecipitationIntensity": "Light"
+            },
+            "Sources": [
+                "AccuWeather"
+            ],
+            "MobileLink": "http://m.accuweather.com/en/nl/amsterdam/249758/daily-weather-forecast/249758?day=5&unit=c&lang=en-us",
+            "Link": "http://www.accuweather.com/en/nl/amsterdam/249758/daily-weather-forecast/249758?day=5&unit=c&lang=en-us"
+        }
+    ]
+}

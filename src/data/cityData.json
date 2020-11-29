@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Amsterdam",
+        "weather_key": "249758"
+    },
+    {
+        "name": "Madrid",
+        "weather_key": "308526"
+    },
+    {
+        "name": "Bratislava",
+        "weather_key": "297345"
+    },
+]

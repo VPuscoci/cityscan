@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
 import Heading from '../../Atoms/Heading';
+import Button from '../../Atoms/Button';
 
-export const StyledHeader = styled.header`
-  ${tw`py-2 px-4 bg-dark-green`}
+export const StyledWrapper = styled.section`
+  ${tw`py-2 px-4 bg-dark-green w-full`}
 `;
 
 export const StyledLogo = styled.img`
@@ -11,5 +12,9 @@ export const StyledLogo = styled.img`
 `;
 
 export const StyledHeading = styled(Heading)`
-  ${tw`pt-1 italic`}
+  ${tw`pt-2 italic text-black`}
+`;
+
+export const StyledButton = styled(Button)`
+  ${tw`m-auto`}
 `;

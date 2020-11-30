@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Home from './components/Pages/Home/Index';
+import Home from './components/Pages/Home';
+import Cities from './components/Pages/Cities';
 import Header from './components/Molecules/Header';
 
 const Routes = () => {
@@ -11,6 +12,9 @@ const Routes = () => {
         <Switch>
           <Route exact path="/">
             <Home />
+          </Route>
+          <Route path="/Cities">
+            <Cities />
           </Route>
         </Switch>
       </Router>

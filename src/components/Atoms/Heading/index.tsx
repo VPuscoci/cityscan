@@ -20,11 +20,16 @@ const StyledHeading = styled.h1`
   ${({ center }: TType) => center && tw`text-center`}
 `;
 
-const Heading: React.FC<TType> = ({ children, type = 'h1', center }) => {
+const Heading: React.FC<TType> = ({
+  children,
+  type = 'h1',
+  center,
+  ...rest
+}) => {
   if (!children) return null;
 
   return (
-    <StyledHeading as={type} type={type} center={center}>
+    <StyledHeading as={type} type={type} center={center} {...rest}>
       {children}
     </StyledHeading>
   );

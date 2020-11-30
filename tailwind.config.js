@@ -20,6 +20,17 @@ module.exports = {
     fontFamily: {
       sans: ['"Open Sans"', 'Arial', 'sans-serif'],
     },
+    colors: {
+      white: '#eeeeee',
+      black: '#333333',
+      'green-0': '#6cae75',
+      'green-1': '#579e60',
+      'light-green': '#8BBD8B',
+      sage: '#C1CC99',
+      'orange-0': '#f5a65b',
+      'orange-1': '#f38b2b',
+      'dark-green': '#8B9474',
+    },
   },
   variants: {
     extend: {},

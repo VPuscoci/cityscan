@@ -1,14 +1,17 @@
 [
-    {
-        "name": "Amsterdam",
-        "weather_key": "249758"
-    },
-    {
-        "name": "Madrid",
-        "weather_key": "308526"
-    },
-    {
-        "name": "Bratislava",
-        "weather_key": "297345"
-    },
+  {
+    "name": "Amsterdam",
+    "weather_key": "249758",
+    "city_code": "AMS"
+  },
+  {
+    "name": "Madrid",
+    "weather_key": "308526",
+    "city_code": "MAD"
+  },
+  {
+    "name": "Bratislava",
+    "weather_key": "297345",
+    "city_code": "BTS"
+  }
 ]

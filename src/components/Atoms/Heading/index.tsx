@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import tw from 'twin.macro';
 
@@ -20,7 +20,7 @@ const StyledHeading = styled.h1`
   ${({ center }: TType) => center && tw`text-center`}
 `;
 
-const Heading: FC<TType> = ({ children, type = 'h1', center }) => {
+const Heading: React.FC<TType> = ({ children, type = 'h1', center }) => {
   if (!children) return null;
 
   return (

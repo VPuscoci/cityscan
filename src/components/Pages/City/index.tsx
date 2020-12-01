@@ -38,29 +38,29 @@ const City: React.FC<CityProps> = () => {
 
       <StyledWeather>
         <Container>
-          <StyledHeading type="h2">Climate information:</StyledHeading>
+          <StyledHeading type="h2">About the weather:</StyledHeading>
           <StyledClimate>{cityDetails.climate_text}</StyledClimate>
-          <StyledHeading type="h3">Weekly forecast:</StyledHeading>
+          <StyledHeading type="h3">Here's the Weekly forecast:</StyledHeading>
           <FiveDayForecast locationId={cityDetails.weather_key} />
         </Container>
       </StyledWeather>
       <StyledLiving>
         <Container>
           <p>
-            {`According to Numbeo, the cost of living index is ${cityDetails.cost_of_living_index}... `}
+            {`According to Numbeo, ${cityDetails.cost_of_living_text}, `}
             <a
               href={cityDetails.cost_of_living_url}
               target="_blank"
               rel="noreferrer"
             >
-              see more details
+              see more details.
             </a>
           </p>
         </Container>
       </StyledLiving>
       <StyledFlights>
         <Container>
-          <StyledHeading type="h2">Popular flights info:</StyledHeading>
+          <StyledHeading type="h2">Popular flights:</StyledHeading>
           {popular_places &&
             popular_places.map((place, i) => (
               <FlightDetails

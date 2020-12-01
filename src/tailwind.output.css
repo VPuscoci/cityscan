@@ -2755,6 +2755,14 @@ body {
   background-size: contain;
 }
 
+.bg-100vh {
+  background-size: 100vh;
+}
+
+.bg-150vh {
+  background-size: 150vh;
+}
+
 .border-collapse {
   border-collapse: collapse;
 }
@@ -20828,6 +20836,14 @@ body {
     background-size: contain;
   }
 
+  .sm\:bg-100vh {
+    background-size: 100vh;
+  }
+
+  .sm\:bg-150vh {
+    background-size: 150vh;
+  }
+
   .sm\:border-collapse {
     border-collapse: collapse;
   }
@@ -38858,6 +38874,14 @@ body {
     background-size: contain;
   }
 
+  .md\:bg-100vh {
+    background-size: 100vh;
+  }
+
+  .md\:bg-150vh {
+    background-size: 150vh;
+  }
+
   .md\:border-collapse {
     border-collapse: collapse;
   }
@@ -56886,6 +56910,14 @@ body {
 
   .lg\:bg-contain {
     background-size: contain;
+  }
+
+  .lg\:bg-100vh {
+    background-size: 100vh;
+  }
+
+  .lg\:bg-150vh {
+    background-size: 150vh;
   }
 
   .lg\:border-collapse {

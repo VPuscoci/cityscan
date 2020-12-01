@@ -20,7 +20,7 @@ export const StyledWrapper = styled.section<TWrapper>`
   ${tw`w-full min-h-screen flex flex-col justify-between lg:pt-14`};
   ${({ cityName }) =>
     `background-image: url(${cityImages[cityName.toLowerCase()]})`};
-  ${tw`bg-cover`}
+  ${tw`bg-150vh lg:bg-150vh`}
 `;
 
 export const StyledHeading = styled(Heading)`

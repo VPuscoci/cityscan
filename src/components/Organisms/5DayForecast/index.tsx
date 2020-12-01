@@ -2,6 +2,7 @@ import * as React from 'react';
 import use5DayForecast from '../../../hooks/use5DayForecast';
 import Heading from '../../Atoms/Heading';
 import Icon from '../../Atoms/Icon';
+import Loader from '../../Atoms/Loader';
 import { StyledForecastData } from './5DayForecast.styled';
 
 export interface IFiveDayForecastProps {
@@ -9,7 +10,7 @@ export interface IFiveDayForecastProps {
 }
 
 const FiveDayForecast: React.FC<IFiveDayForecastProps> = ({ locationId }) => {
-  const { status, data, error, isFetching } = use5DayForecast({
+  const { status, data } = use5DayForecast({
     locationId,
   });
 
@@ -18,7 +19,7 @@ const FiveDayForecast: React.FC<IFiveDayForecastProps> = ({ locationId }) => {
   return (
     <>
       {status === 'loading' ? (
-        'Getting weather info'
+        <Loader />
       ) : status === 'error' ? (
         <span>Sorry, we cannot get the retrieve the weather information</span>
       ) : (

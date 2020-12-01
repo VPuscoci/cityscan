@@ -13,6 +13,10 @@ module.exports = {
         '70vh': '70vh',
         '60vh': '60vh',
       },
+      backgroundSize: {
+        '100vh': '100vh',
+        '150vh': '150vh',
+      },
     },
     screens: {
       sm: '640px',

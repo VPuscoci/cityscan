@@ -1,6 +1,7 @@
 import React from 'react';
 import useFlightsData from '../../../hooks/useFlightsData';
 import useDate from '../../../hooks/useCurrentDate';
+import Loader from '../../Atoms/Loader';
 import {
   StyledPlaneIcon,
   StyledWrapper,
@@ -26,7 +27,7 @@ const FlightDetails: React.FC<IFlightDetailsProps> = ({ from, to }) => {
   return (
     <StyledWrapper>
       {status === 'loading' ? (
-        'Fetching flight info'
+        <Loader />
       ) : status === 'error' || !price ? (
         <span>Sorry, we cannot get the fight information</span>
       ) : (

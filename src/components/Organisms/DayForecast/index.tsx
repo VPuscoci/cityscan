@@ -2,6 +2,7 @@ import React from 'react';
 import Icon from '../../Atoms/Icon';
 import { StyledHeading, StyledTemperature } from './dayForecast.styled';
 import useCurrentForecast from '../../../hooks/useCurrentForecast';
+import Loader from '../../Atoms/Loader';
 
 export interface IDayForecastProps {
   locationId: string;
@@ -20,7 +21,7 @@ const DayForecast: React.FC<IDayForecastProps> = ({ locationId, city }) => {
     <StyledTemperature>
       <StyledHeading type="h1">{city}</StyledHeading>
       {status === 'loading' ? (
-        '...'
+        <Loader />
       ) : status === 'error' ? (
         <></>
       ) : (

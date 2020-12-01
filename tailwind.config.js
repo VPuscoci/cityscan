@@ -12,8 +12,10 @@ module.exports = {
       spacing: {
         '70vh': '70vh',
         '60vh': '60vh',
+        '50vh': '50vh',
       },
       backgroundSize: {
+        '100%': '100%',
         '100vh': '100vh',
         '150vh': '150vh',
       },

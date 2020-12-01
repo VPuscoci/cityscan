@@ -3,12 +3,12 @@ import tw from 'twin.macro';
 import Heading from '../../Atoms/Heading';
 import Button from '../../Atoms/Button';
 import amsterdam from '../../../assets/images/amsterdam.jpg';
-import bratislava from '../../../assets/images/bratislava.jpg';
+import budapest from '../../../assets/images/budapest.jpg';
 import madrid from '../../../assets/images/madrid.jpg';
 
 const cityImages: any = {
   amsterdam,
-  bratislava,
+  budapest,
   madrid,
 };
 
@@ -32,5 +32,5 @@ export const StyledDetails = styled.section`
 `;
 
 export const StyledButton = styled(Button)`
-  ${tw`m-auto self-end`}
+  ${tw`self-end`}
 `;

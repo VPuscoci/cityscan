@@ -3,12 +3,12 @@ import tw from 'twin.macro';
 import Heading from '../../Atoms/Heading';
 import Button from '../../Atoms/Button';
 import amsterdam from '../../../assets/images/amsterdam.jpg';
-import bratislava from '../../../assets/images/bratislava.jpg';
+import budapest from '../../../assets/images/budapest.jpg';
 import madrid from '../../../assets/images/madrid.jpg';
 
 const cityImages: any = {
   amsterdam,
-  bratislava,
+  budapest,
   madrid,
 };
 
@@ -20,7 +20,7 @@ export const StyledWrapper = styled.section<TWrapper>`
   ${tw`w-full min-h-screen flex flex-col justify-between lg:pt-14`};
   ${({ cityName }) =>
     `background-image: url(${cityImages[cityName.toLowerCase()]})`};
-  ${tw`bg-150vh lg:bg-150vh`}
+  ${tw`bg-150vh lg:bg-100%`}
 `;
 
 export const StyledHeading = styled(Heading)`
@@ -32,7 +32,7 @@ export const StyledClimate = styled.p`
 `;
 
 export const StyledWeather = styled.section`
-  ${tw`bg-green-0 w-full px-2 py-4 mt-60vh lg:mt-70vh`}
+  ${tw`bg-green-0 w-full px-2 py-4 mt-60vh lg:mt-50vh`}
 `;
 
 export const StyledFlights = styled.section`
@@ -44,7 +44,7 @@ export const StyledButton = styled(Button)`
 `;
 
 export const StyledLiving = styled.section`
-  ${tw`bg-orange-1 px-2 py-6 text-lg`}
+  ${tw`bg-green-1 px-2 py-6 text-lg`}
   & {
     a {
       ${tw`underline`}

@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom';
 import tw from 'twin.macro';
 
 const sizes = {
-  sm: tw`text-xs lg:text-sm px-2 py-2 max-w-xs`,
+  sm: tw`text-xs lg:text-sm px-4 py-2 max-w-xs`,
   md: tw`text-sm lg:text-lg px-6 py-3 max-w-sm`,
   lg: tw`px-12 py-4 text-xl  max-w-md`,
 };
 
 const variants = {
-  primary: tw`bg-green-0 hover:bg-green-1`,
+  primary: tw`bg-green-0 hover:bg-light-green`,
   secondary: tw`bg-orange-1 hover:bg-orange-0`,
 };
 

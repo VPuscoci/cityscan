@@ -25,7 +25,7 @@ const CityOverview: React.FC<ICityOverviewProps> = ({ city }) => {
         <FlightDetails from={city.city_code} to={favoriteCity.city_code} />
         <StyledButton
           linkTo={`/cities/${city.name}`}
-          variant="secondary"
+          variant="primary"
           size="sm"
         >
           More details

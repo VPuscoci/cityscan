@@ -17,12 +17,12 @@
       "climate_text": "The climate is characterized by hot dry summers and mild winters with infrequent frosts in inland locations with this climate. The summers are hot, the winters are mild and most of precipitation falls in the autumn."
     },
     {
-      "name": "Bratislava",
-      "weather_key": "297345",
-      "city_code": "BTS",
-      "cost_of_living_url": "https://www.numbeo.com/cost-of-living/in/Bratislava",
-      "cost_of_living_text": "a single person estimated monthly costs are 595.55€ without rent",
-      "climate_text": "The climate of the Slovakia can be described as typical European continental influenced climate with warm, dry summers and fairly cold winters. The weather is best May-September, when days are warm and the nights are cool, although it rains more in Spring than in summer."
+      "name": "Budapest",
+      "weather_key": "187423",
+      "city_code": "BUD",
+      "cost_of_living_url": "https://www.numbeo.com/cost-of-living/in/Budapest",
+      "cost_of_living_text": "a single person estimated monthly costs are 506.67€ without rent",
+      "climate_text": "The climate of Hungary can be described as typical European continental influenced climate with warm, dry summers and fairly cold winters. Autumn and winter are usually a little chilly and wet, sometimes snowy and often foggy, especially in the mountainous regions."
     }
   ],
   "popular_places": [

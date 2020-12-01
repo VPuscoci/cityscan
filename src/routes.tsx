@@ -8,16 +8,18 @@ import Header from './components/Molecules/Header';
 const Routes = () => {
   return (
     <React.StrictMode>
-      <Header></Header>
       <Router>
         <Switch>
           <Route exact path="/">
+            <Header />
             <Home />
           </Route>
           <Route exact path="/Cities">
+            <Header />
             <Cities />
           </Route>
           <Route path="/Cities/:cityName">
+            <Header />
             <City />
           </Route>
         </Switch>

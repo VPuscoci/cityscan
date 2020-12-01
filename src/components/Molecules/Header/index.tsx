@@ -1,27 +1,30 @@
 import React from 'react';
 import Logo from '../../../assets/images/cityscan_logo.png';
+import { useHistory } from 'react-router-dom';
 import {
   StyledHeader,
   StyledLogo,
   StyledHeading,
-  StyledDate,
+  StyledBackIcon,
+  StyledLink,
 } from './header.styled';
-import useDate from '../../../hooks/useCurrentDate';
 
-export interface HeaderProps {}
+const Header: React.FC = (props) => {
+  let history = useHistory();
+  console.log(history);
 
-const Header: React.FC<HeaderProps> = () => {
-  const { day, month, year } = useDate();
   return (
     <StyledHeader>
-      <div>
+      {history.location.pathname !== '/' && (
+        <button onClick={() => history.goBack()}>
+          <StyledBackIcon></StyledBackIcon>
+        </button>
+      )}
+
+      <StyledLink href="/">
         <StyledLogo src={Logo} alt="CityScan logo" />
         <StyledHeading type="h2">CityScan</StyledHeading>
-      </div>
-
-      <StyledDate>
-        Flights from: {day}/{month}/{year}
-      </StyledDate>
+      </StyledLink>
     </StyledHeader>
   );
 };

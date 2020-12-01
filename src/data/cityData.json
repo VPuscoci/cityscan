@@ -2,16 +2,19 @@
   {
     "name": "Amsterdam",
     "weather_key": "249758",
-    "city_code": "AMS"
+    "city_code": "AMS",
+    "climate_text": "The Netherlands have a temperate maritime climate influenced by the North Sea and Atlantic Ocean, with cool summers and moderate winters. ... Sometimes easterly winds can cause a more continental type of weather, warm and dry in the summer, but cold and clear in the winter with temperatures sometimes far below zero."
   },
   {
     "name": "Madrid",
     "weather_key": "308526",
-    "city_code": "MAD"
+    "city_code": "MAD",
+    "climate_text": "It is characterized by hot dry summers and mild winters with infrequent frosts in inland locations with this climate. The summers are hot, the winters are mild and most of precipitation falls in the autumn."
   },
   {
     "name": "Bratislava",
     "weather_key": "297345",
-    "city_code": "BTS"
+    "city_code": "BTS",
+    "climate_text": "The climate of the Slovakia can be described as typical European continental influenced climate with warm, dry summers and fairly cold winters. The weather is best May-September, when days are warm and the nights are cool, although it rains more in Spring than in summer."
   }
 ]

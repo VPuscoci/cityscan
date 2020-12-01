@@ -3,7 +3,7 @@ import tw from 'twin.macro';
 import Heading from '../../Atoms/Heading';
 
 export const StyledHeader = styled.header`
-  ${tw`py-2 px-4 bg-dark-green`}
+  ${tw`py-2 px-4 bg-dark-green w-full absolute`}
 `;
 
 export const StyledLogo = styled.img`
@@ -11,5 +11,9 @@ export const StyledLogo = styled.img`
 `;
 
 export const StyledHeading = styled(Heading)`
-  ${tw`pt-1 italic`}
+  ${tw`pt-1 italic float-left`}
+`;
+
+export const StyledDate = styled.span`
+  ${tw`float-right`}
 `;

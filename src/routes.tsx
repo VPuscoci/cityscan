@@ -13,9 +13,10 @@ const Routes = () => {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/Cities">
+          <Route exact path="/Cities">
             <Cities />
           </Route>
+          <Route path="/Cities/:id"></Route>
         </Switch>
       </Router>
     </React.StrictMode>

@@ -1,19 +1,21 @@
 # CityScan web app
 
+The CityScan web application helps users find their dream city by showing them real time weather information, best flights to popular destionations and much more.
+[You can preview the app here](https://city-scan.vercel.app)
 
 ## Implementation details
 
-Before starting to code I brainstormed a bit and wrote down the list of features, technical requirements and a moqup of the app on a [whiteboard](https://photos.app.goo.gl/9PjMt5Pc9HnJqJ1D7).
+Before starting to code I brainstormed a bit and wrote down the list of features, technical requirements and a moqup of the app on a [whiteboard](https://photos.app.goo.gl/9PjMt5Pc9HnJqJ1D7) (sorry for my handwriting :expressionless:).
 
 The web app was created mobile first because most of the users are browsing the web from their mobile devices now.
-The boilerplate code was generated usint the `create-react-app` package in order to speedup the development process and maintain React best practices.
+The boilerplate code was generated using the `create-react-app` package in order to speedup the development process and maintain React best practices.
 
-### Technical details
+### Technical details 
 
-*Framework* - React with Typescript
-*Styling* - Tailwind, Styled components
-*State Management* - React Hooks and React Query
-*Browser support* - Modern browsers support: Google Chrome, Apple Safari, Microsoft Edge, Mozilla Firefox
+- *Framework* -> React with Typescript
+- *Styling* -> Tailwind, Styled components
+- *State Management* -> React Hooks and React Query
+- *Browser support* -> Latest versions of Google Chrome, Apple Safari, Microsoft Edge, Mozilla Firefox
 
 ## Future improvements
 
@@ -21,16 +23,16 @@ Due to the lack of time I was not able to implement all the features and technic
 
 Features:
 
-- Allow user to choose current location and/or get the user's location via the browser API
-- Allow user to choose the departe dates
+- Add a `Choose city` button in the city detail page, that will ask the user to confirm that this city is the chosen one and take him to a last `Congratulations` screen 
+- Allow user to choose current location and/or get the user's location via the browser API :sunny:
+- Allow user to choose the flight departure dates :airplane:
 - Find and implement another weather data API that has the data needed to generate a graph of the annual weather temperatures and sunrise/sunset times
 - Allow user to choose the cities he would like to compare
   
 Tech debt:
 - Implement dynamic imports for city background images
 - Load optimized images for mobile
-- Add unit tests
-- Prefect routes 
+- Add unit tests :pray:
 - Create API proxy layer in order to improve security
 
 

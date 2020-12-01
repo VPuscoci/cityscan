@@ -21,7 +21,7 @@ const FiveDayForecast: React.FC<IFiveDayForecastProps> = ({ locationId }) => {
       {status === 'loading' ? (
         <Loader />
       ) : status === 'error' ? (
-        <span>Sorry, we cannot get the retrieve the weather information</span>
+        <span>Sorry, we cannot get the weather information</span>
       ) : (
         <>
           <Heading type="h3">{summary}</Heading>

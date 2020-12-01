@@ -17,24 +17,20 @@ type TWrapper = {
 };
 
 export const StyledWrapper = styled.section<TWrapper>`
-  ${tw`pt-12 h-screen w-full flex flex-col justify-between`};
+  ${tw`h-88vh w-full flex flex-col justify-between`};
+  ${tw`lg:w-1/3 lg:float-left lg:h-screen lg:border-dark-green lg:border-r-8 last:lg:border-r-0 lg:pt-14`};
   ${({ cityName }) =>
     `background-image: url(${cityImages[cityName.toLowerCase()]})`};
   ${tw`bg-cover`}
 `;
-
 export const StyledHeading = styled(Heading)`
   ${tw`text-white`}
 `;
 
 export const StyledDetails = styled.section`
-  ${tw`bg-green-1 w-full`}
+  ${tw`bg-green-1 w-full px-2 py-4`}
 `;
 
 export const StyledButton = styled(Button)`
   ${tw`m-auto self-end`}
-`;
-
-export const StyledTemperature = styled.div`
-  ${tw`p-2 mt-4 mr-4 self-end text-white text-xl bg-green-1 bg-opacity-50 rounded-lg`}
 `;

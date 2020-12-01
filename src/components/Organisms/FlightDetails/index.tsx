@@ -1,7 +1,13 @@
 import React from 'react';
 import useFlightsData from '../../../hooks/useFlightsData';
 import useDate from '../../../hooks/useCurrentDate';
-import { StyledPlaneIcon, StyledWrapper } from './flightDetails.styled';
+import {
+  StyledPlaneIcon,
+  StyledWrapper,
+  StyledDuration,
+  StyledFlightPath,
+  StyledPrice,
+} from './flightDetails.styled';
 
 export interface IFlightDetailsProps {
   from: string;
@@ -15,7 +21,7 @@ const FlightDetails: React.FC<IFlightDetailsProps> = ({ from, to }) => {
     startDate: useDate(),
   });
 
-  const { flyDuration, flyFrom, flyTo, price, deep_link } =
+  const { fly_duration, flyFrom, flyTo, price, deep_link } =
     data?.data.data[0] || {};
   return (
     <StyledWrapper>
@@ -25,12 +31,11 @@ const FlightDetails: React.FC<IFlightDetailsProps> = ({ from, to }) => {
         <span>Sorry, we cannot get the fight information</span>
       ) : (
         <>
-          <span>{flyFrom} </span>
-          <StyledPlaneIcon />
-          <span>{flyTo}</span>{' '}
-          <span>
-            {flyDuration} - {price} EUR
-          </span>
+          <StyledFlightPath>
+            {flyFrom} <StyledPlaneIcon /> {flyTo}
+          </StyledFlightPath>
+          <StyledDuration>Duration: {fly_duration}</StyledDuration>
+          <StyledPrice>{price} EUR</StyledPrice>
         </>
       )}
     </StyledWrapper>

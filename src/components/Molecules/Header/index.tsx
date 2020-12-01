@@ -14,10 +14,13 @@ const Header: React.FC<HeaderProps> = () => {
   const { day, month, year } = useDate();
   return (
     <StyledHeader>
-      <StyledLogo src={Logo} alt="CityScan logo" />
-      <StyledHeading type="h2">CityScan</StyledHeading>
+      <div>
+        <StyledLogo src={Logo} alt="CityScan logo" />
+        <StyledHeading type="h2">CityScan</StyledHeading>
+      </div>
+
       <StyledDate>
-        {year} / {month} / {day}
+        Flights from: {day}/{month}/{year}
       </StyledDate>
     </StyledHeader>
   );

@@ -2,7 +2,18 @@ module.exports = {
   purge: ['./src/**/*.tsx'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      height: {
+        '88vh': '88vh',
+      },
+      width: {
+        desktop: '1016px',
+      },
+      spacing: {
+        '70vh': '70vh',
+        '60vh': '60vh',
+      },
+    },
     screens: {
       sm: '640px',
       md: '768px',

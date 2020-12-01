@@ -12,7 +12,6 @@ const DayForecast: React.FC<IDayForecastProps> = ({ locationId, city }) => {
   const { data, status } = useCurrentForecast({
     locationId,
   });
-  console.log(data);
 
   const { Temperature, WeatherIcon, WeatherText } = data?.data[0] || {};
   const currentTemp = Temperature?.Metric.Value;

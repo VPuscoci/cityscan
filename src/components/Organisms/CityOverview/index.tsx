@@ -1,47 +1,25 @@
 import React from 'react';
 import {
   StyledButton,
-  StyledHeading,
-  StyledTemperature,
   StyledWrapper,
   StyledDetails,
 } from './cityOverview.styled';
-import Icon from '../../Atoms/Icon';
-import FlightInfo from '../../Molecules/FlightInfo';
-
-import CurrentForecast from '../../../data/24hForecast.json';
-import FiveDayForecast from '../../../data/5dayForecast.json';
-import FlightsData from '../../../data/flight.json';
+import FlightDetails from '../../Organisms/FlightDetails';
+import DayForecast from '../../Organisms/DayForecast';
+import CitiesData from '../../../data/cityData.json';
 
 export interface ICityOverviewProps {
   city: any;
 }
 
 const CityOverview: React.FC<ICityOverviewProps> = ({ city }) => {
-  const { Temperature, WeatherIcon, WeatherText } = CurrentForecast[0];
-  const currentTemp = Temperature.Metric.Value;
-  const currentUnit = Temperature.Metric.Unit;
-  const { fly_duration, price } = FlightsData.data[0];
+  const favoriteCity = CitiesData.popular_places[0];
 
   return (
     <StyledWrapper cityName={city.name}>
-      <StyledTemperature>
-        <StyledHeading type="h1">{city.name}</StyledHeading>
-        <span>{currentTemp}</span>&#176; <span>{currentUnit}</span>
-        <Icon id={WeatherIcon} text={WeatherText} />
-      </StyledTemperature>
-
+      <DayForecast locationId={city.weather_key} city={city.name}></DayForecast>
       <StyledDetails>
-        <FlightInfo
-          duration={fly_duration}
-          price={price}
-          currency={FlightsData.currency}
-        />
-        <FlightInfo
-          duration={fly_duration}
-          price={price}
-          currency={FlightsData.currency}
-        />
+        <FlightDetails from={city.city_code} to={favoriteCity.city_code} />
         <StyledButton
           linkTo={`/cities/${city.name}`}
           variant="secondary"

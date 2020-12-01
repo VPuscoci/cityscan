@@ -7,7 +7,7 @@ export interface CitiesProps {}
 const Cities: React.FC<CitiesProps> = () => {
   return (
     <main>
-      {CitiesData.map((city, i) => {
+      {CitiesData.destionations.map((city, i) => {
         return <CityOverview key={i} city={city} />;
       })}
     </main>
